@@ -1,14 +1,15 @@
-""" Kraken exchange subclass """
+""" Phemex exchange subclass """
 import logging
-from typing import Any, Dict
+from typing import List, Optional, Tuple
 
 import ccxt
+import arrow
 
 from freqtrade.exceptions import (DDosProtection, ExchangeError,
                                   InvalidOrderException, OperationalException,
                                   TemporaryError)
 from freqtrade.exchange import Exchange
-from freqtrade.exchange.common import retrier
+from freqtrade.exchange.common import retrier_async
 
 logger = logging.getLogger(__name__)
 
