@@ -17,3 +17,4 @@ from freqtrade.exchange.kraken import Kraken
 from freqtrade.exchange.binance import Binance
 from freqtrade.exchange.bibox import Bibox
 from freqtrade.exchange.ftx import Ftx
+from freqtrade.exchange.phemex import Phemex
